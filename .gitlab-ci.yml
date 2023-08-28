@@ -1,0 +1,11 @@
+stages:
+  - test
+  - build
+
+variables:
+  DOCKER_IMAGE: example-pipeline
+  DOCKER_REGISTRY: public.ecr.aws/bitswan/
+
+include:
+  - project: 'LibertyAces/Product/bitswanmonorepo'
+    file: 'cicd/docker-build.yml'
