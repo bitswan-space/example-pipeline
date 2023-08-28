@@ -5,7 +5,7 @@ variables:
   DOCKER_IMAGE: example-pipeline
   DOCKER_REGISTRY: public.ecr.aws/bitswan/
 
-publish-base-image:
+build:
   image:
     name: amazon/aws-cli
     entrypoint: [""]
