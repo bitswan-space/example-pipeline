@@ -1,10 +1,10 @@
 stages:
-  - test
   - build
 
 variables:
   DOCKER_IMAGE: example-pipeline
   DOCKER_REGISTRY: public.ecr.aws/bitswan/
+  AWS_DEFAULT_REGION: us-east-1
 
 include:
   - project: 'LibertyAces/Product/bitswanmonorepo'
