@@ -1,6 +1,3 @@
-stages:
-  - build
-
 variables:
   DOCKER_IMAGE: example-pipeline
   DOCKER_REGISTRY: public.ecr.aws/bitswan/
@@ -12,7 +9,7 @@ build:
   services:
     - docker:dind
   only:
-    - master
+    - main
   before_script:
     - amazon-linux-extras install docker
     - yum install -y git
