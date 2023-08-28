@@ -1,6 +1,7 @@
 variables:
   DOCKER_IMAGE: example-pipeline
   DOCKER_REGISTRY: public.ecr.aws/bitswan
+  DOCKER_HOST: tcp://docker:2375
 
 build:
   image:
