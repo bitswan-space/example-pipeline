@@ -1,4 +1,4 @@
-FROM public.registry.bitswan.space/bitswan/bspump:2023-53-git-07c9711
+FROM public.registry.bitswan.space/bitswan/bspump:2023-54-git-4c50711
 
 LABEL src=https://github.com/bitswan-space/example-pipeline
 
