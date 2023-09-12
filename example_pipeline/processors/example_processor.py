@@ -1,5 +1,7 @@
 import bspump
 import logging
+import time
+import random
 from datetime import datetime
 
 
@@ -12,7 +14,9 @@ class ExampleProcessor(bspump.Processor):
     def process(self, context, event):
         current_time = datetime.now()
         timestamp = current_time.strftime('%Y-%m-%d %H:%M:%S.%f')
-    
+        # sleep a random amount of time between 1 and 100ms
+        time.sleep(random.randint(1, 100) / 1000)
+
         event = {
             "timestamp": timestamp,
             "random_number": event,
