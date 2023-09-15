@@ -9,4 +9,6 @@ COPY ./example_pipeline ./example_pipeline
 COPY ./example-config.conf /conf/pipeline.conf
 RUN mkdir /data
 
+RUN pip3 install paho-mqtt
+
 CMD ["python3", "/opt/example-pipeline/pipeline.py", "-c", "/conf/pipeline.conf"]
