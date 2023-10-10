@@ -1,7 +1,7 @@
 FROM public.registry.bitswan.space/bitswan/bspump:2023-64-git-afdd514
 LABEL src=https://github.com/bitswan-space/example-pipeline
 
-RUN mkdir /opt-example-pipeline
+RUN mkdir /opt/example-pipeline
 WORKDIR /opt/example-pipeline
 COPY ./pipeline.py ./pipeline.py
 COPY ./example_pipeline ./example_pipeline
