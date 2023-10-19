@@ -1,11 +1,7 @@
 import bspump
-import logging
 import time
 import random
 from datetime import datetime
-
-
-L = logging.getLogger(__name__)
 
 class ExampleProcessor(bspump.Processor):
     def __init__(self, app, pipeline):

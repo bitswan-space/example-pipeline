@@ -1,14 +1,9 @@
 import bspump
 import bspump.file
 import bspump.trigger
-import bspump.common
 import random
 
-from ..processors.example_processor import ExampleProcessor
-
-import logging
-
-L = logging.getLogger(__file__)
+from ..processors import *
 
 
 class RandomNumberSource(bspump.abc.source.TriggerSource):

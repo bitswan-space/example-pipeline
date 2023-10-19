@@ -1,11 +1,7 @@
 import bspump
-import logging
-from .pipelines.example_pipeline import ExamplePipeline
+from .pipelines import *
 
-L = logging.getLogger(__name__)
-
-
-class ExampleApp(bspump.BSPumpApplication):
+class App(bspump.BSPumpApplication):
     def __init__(self):
         super().__init__()
         svc = self.get_service("bspump.PumpService")
