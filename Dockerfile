@@ -1,4 +1,4 @@
-FROM public.registry.bitswan.space/bitswan/bspump:sha256_6cd45a50fb1db356c2636cfca45e1ffb45ca005148bda1673a4a403c683ced43
+FROM public.registry.bitswan.space/bitswan/bspump:sha256_1f6132c04a01c3bd7e007cb4f5481d4a43e314f29935ea8a024851dbdc06e7ed
 LABEL src=https://github.com/bitswan-space/example-pipeline
 
 RUN mkdir /data/
